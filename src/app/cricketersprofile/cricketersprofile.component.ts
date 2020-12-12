@@ -32,6 +32,7 @@ export class CricketersprofileComponent implements OnInit {
 
   constructor(private activatedRoute:ActivatedRoute,
     private router:Router) {
+    console.log (this.activatedRoute)
     this.activatedRoute.params.subscribe((params)=>{
       console.log(params)
       
@@ -39,6 +40,7 @@ export class CricketersprofileComponent implements OnInit {
 
       this.currentUser=this.users.find((x)=>{
         return x.roll==this.currentUserId
+        //find method see the definition in intesllisense
       })
       console.log(this.currentUser)
       
