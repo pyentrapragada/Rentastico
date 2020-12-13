@@ -13,6 +13,7 @@ import { CricketusersComponent } from './cricketusers/cricketusers.component';
 import { CricketersprofileComponent } from './cricketersprofile/cricketersprofile.component';
 import { SearchComponent } from './search/search.component';
 import{UsersService} from './services/users.service';
+import{HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import{UsersService} from './services/users.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [UsersService],
   bootstrap: [AppComponent]

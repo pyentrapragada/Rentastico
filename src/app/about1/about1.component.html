@@ -1,1 +1,14 @@
-<p>about1 works!</p>
+<h4>About 1 Works using Fake Rest Api </h4>
+<table>
+    <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    </tr>
+    <tr *ngFor="let _user of users">
+      <td>{{_user.name}}</td>
+      <td>{{_user.email}}</td>
+      <td>{{_user.phone}}</td>
+    </tr>
+    
+   </table>

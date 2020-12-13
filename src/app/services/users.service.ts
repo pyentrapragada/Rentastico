@@ -1,17 +1,14 @@
 import { Injectable } from '@angular/core';
+import{HttpClient} from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UsersService {
 
-  constructor() { }
+  constructor(private http:HttpClient) { }
   getAllUsers(){
-    return [
-      {name:'praveen',age:29 ,gender:'Male'},
-      {name:'Moksha',age:1 ,gender:'Male'},
-      {name:'Kishika',age:4,gender:'Feamle'},
-      {name:'Sudeppa',age:30,gender:"Female"}
-    ]
-  }
+    return this.http.get("https://jsonplaceholder.typicode.com/users");
+   
+}
 }

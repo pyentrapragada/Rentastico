@@ -16,17 +16,17 @@
 
 <router-outlet></router-outlet>
 <hr>
-<h4>Service Example</h4>
+<h4>Service Example using Fake Api</h4>
 <table>
  <tr>
  <th>Name</th>
- <th>Age</th>
- <th>Gender</th>
+ <th>id</th>
+ <th>Website</th>
  </tr>
  <tr *ngFor="let _user of users">
    <td>{{_user.name}}</td>
-   <td>{{_user.age}}</td>
-   <td>{{_user.gender}}</td>
+   <td>{{_user.id}}</td>
+   <td>{{_user.website}}</td>
  </tr>
  
 </table>
