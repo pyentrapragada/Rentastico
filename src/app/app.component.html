@@ -15,10 +15,20 @@
 </ul>
 
 <router-outlet></router-outlet>
+<hr>
+<h4>Service Example</h4>
+<table>
+ <tr>
+ <th>Name</th>
+ <th>Age</th>
+ <th>Gender</th>
+ </tr>
+ <tr *ngFor="let _user of users">
+   <td>{{_user.name}}</td>
+   <td>{{_user.age}}</td>
+   <td>{{_user.gender}}</td>
+ </tr>
+ 
+</table>
 
 
-<!--<nav>
-  <a class="button" routerLink="/home" >Home</a> |
-  <a class="button" routerLink="/about">About</a>
-</nav>
-<router-outlet></router-outlet>-->

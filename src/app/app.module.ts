@@ -11,6 +11,8 @@ import { UsersListComponent } from './users-list/users-list.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { CricketusersComponent } from './cricketusers/cricketusers.component';
 import { CricketersprofileComponent } from './cricketersprofile/cricketersprofile.component';
+import { SearchComponent } from './search/search.component';
+import{UsersService} from './services/users.service';
 
 @NgModule({
   declarations: [
@@ -22,13 +24,14 @@ import { CricketersprofileComponent } from './cricketersprofile/cricketersprofil
     UsersListComponent,
     UserProfileComponent,
     CricketusersComponent,
-    CricketersprofileComponent
+    CricketersprofileComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [UsersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

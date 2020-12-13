@@ -8,6 +8,7 @@ import { UsersListComponent } from './users-list/users-list.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import  {CricketusersComponent} from './cricketusers/cricketusers.component';
 import{CricketersprofileComponent} from './cricketersprofile/cricketersprofile.component'
+import { SearchComponent } from './search/search.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path:'user-list/:id',component:UserProfileComponent},
   {path:"cricketusers",component:CricketusersComponent},
   {path:"cricketusers/:id",component:CricketersprofileComponent},
+  {path:"search",component:SearchComponent},
 
   
 
